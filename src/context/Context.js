@@ -15,7 +15,12 @@ export const Context=({children})=> {
       const [Blog,setBlog] = useState()
       const [BlogImg, setBlogImg] = useState(null)
       const [Delete,setDelete]=useState(null)
-      const [BlogContent, setBlogContent] = useState()
+      const [BlogContent, setBlogContent] = useState(
+        {
+            title:"",
+            description:""
+        }
+      )
 
   return (
     <CustomData.Provider value={{BlogContent,setBlogContent,AddContent,setAddContent,articles,setarticles,setBlog,Blog,BlogImg,setBlogImg,Delete,setDelete}}>

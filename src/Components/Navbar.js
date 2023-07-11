@@ -3,15 +3,6 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     const [ChangeColour,ChangeColour2,ChangeColour1,ChangeColour3,ChangeColour4] = [useRef(null),useRef(null),useRef(null),useRef(null),useRef(null)]
-    // const ChangeColour1 = useRef(null)
-    // const ChangeColour2 = useRef(null)
-    // const ChangeColour3 = useRef(null)
-    // const ChangeColour4 = useRef(null)
-    // const onChange=()=>{
-    //     ChangeColour.current.style.borderBottom ="2px solid black"
-    // }
-
-   
     return (
       <div>
         <nav className='flex justify-between px-8 bg-slate-600 text-white p-5'>
